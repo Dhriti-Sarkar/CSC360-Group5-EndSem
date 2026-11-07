@@ -7,8 +7,8 @@ The project ends in a group presentation with a live demo.
 
 | # | Member   | Topic | Folder | Shared task |
 |---|----------|-------|--------|-------------|
-| 1 | _name_   | Intro + Windows & JDK install | `1-install-windows/` | Owns the slide deck (`presentation/`) |
-| 2 | _name_   | WSL install: WSLg, apt JDK, headless mode, troubleshooting | `2-install-wsl/` | Records the backup demo video |
+| 1 | Jiya   | Intro + Windows & JDK install | `1-install-windows/` | Owns the slide deck (`presentation/`) |
+| 2 | Heer   | WSL install: WSLg, apt JDK, headless mode, troubleshooting | `2-install-wsl/` | Records the backup demo video |
 | 3 | _Dhriti_ | User guide / UI tour: menus, toolbar, filters, histogram, edges, Macro Recorder | `3-user-guide/` | Sample images + one-page cheat sheet |
 | 4 | _Aangi_  | Plugins: installing existing ones, writing our own (Invert_Image, grayscale, 3x3 blur), PlugIn vs PlugInFilter | `4-plugins/` | Q&A prep and rehearsal |
 
