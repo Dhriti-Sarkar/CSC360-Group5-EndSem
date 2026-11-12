@@ -4,10 +4,10 @@ These pictures are used in `../demo-script.md`. They must work **offline**, so e
 
 | File | What it is | Used in step | Source (URL or "own photo") | Licence | Size |
 |---|---|---|---|---|---|
-| `photo.jpg` | Normal colour photo | 1, 2, 3 | ImageJ built-in sample: Clown | _TODO: confirm_ | _TODO_ |
-| `noisy.png` | Grainy picture (Leaf with Process > Noise > Add Noise applied) | 4 | ImageJ built-in sample: Leaf, noise added by us | _TODO: confirm_ | _TODO_ |
-| `edges.png` | Picture with clear outlines | 5 | ImageJ built-in sample: Boats | _TODO: confirm_ | _TODO_ |
-| `blobs.gif` | Round shapes on a plain background | 6, 7, 8 | ImageJ built-in sample: Blobs | _TODO: confirm_ | _TODO_ |
+| `photo.gif` | Normal photo | 1, 2, 3 | ImageJ built-in sample: Clown | _TODO: confirm_ | 37 KB |
+| `noisy.gif` | Grainy picture (Leaf with Process > Noise > Add Noise applied) | 4 | ImageJ built-in sample: Leaf, noise added by us | _TODO: confirm_ | 179 KB |
+| `edges.gif` | Picture with clear outlines | 5 | ImageJ built-in sample: Boats | _TODO: confirm_ | 370 KB |
+| `blobs.gif` | Round shapes on a plain background | 6, 7, 8 | ImageJ built-in sample: Blobs | _TODO: confirm_ | 26 KB |
 | `particles.png` (backup) | Particles for step 7 if the Blobs count looks wrong | 7 | ImageJ built-in sample: Particles | _TODO: confirm_ | _TODO_ |
 | `demo-macro.ijm` | Recorded macro (Gaussian Blur sigma 2, then Find Edges) | 8 (fallback) | recorded by us | n/a | n/a |
 
@@ -20,7 +20,7 @@ These pictures are used in `../demo-script.md`. They must work **offline**, so e
 ## Notes
 
 - Blobs uses an inverting LUT. If the threshold looks backwards in step 6, click **Auto** or tick **Dark background**.
-- Choose a format that matches the file name when saving (Gif for `blobs.gif`, Jpeg for `photo.jpg`, PNG for the others).
+- Choose a format that matches the file name when saving (all four are saved as GIF).
 
 ## Checklist
 

@@ -18,9 +18,9 @@ Tip: **File > Open Samples** has free built-in pictures (Blobs, Boats, Clown, Le
 
 | Name (draft) | What it is | Used in step |
 |---|---|---|
-| `photo.jpg` | A normal colour photo | 1, 2, 3 |
-| `noisy.png` | A grainy or blurry picture | 4 |
-| `edges.png` | A picture with clear outlines (a building, a tool) | 5 |
+| `photo.gif` | A normal colour photo | 1, 2, 3 |
+| `noisy.gif` | A grainy or blurry picture | 4 |
+| `edges.gif` | A picture with clear outlines (a building, a tool) | 5 |
 | `blobs.gif` | Dark or light round shapes on a plain background (cells, coins) | 6, 7, 8 |
 
 Replace these names with the real files once chosen. All must be small and free to use. Write the source and licence of each in `samples/README.md`.
@@ -29,14 +29,14 @@ Replace these names with the real files once chosen. All must be small and free 
 
 | # | Time | Do this | Say this (plain words) |
 |---|------|---------|------------------------|
-| 1 | 0:20 | **File > Open**, choose `photo.jpg`. | "ImageJ is a free program for looking at and measuring pictures. Let's open one." |
+| 1 | 0:20 | **File > Open**, choose `photo.gif`. | "ImageJ is a free program for looking at and measuring pictures. Let's open one." |
 | 2 | 0:40 | Point at: menu bar, toolbar (the row of tool icons), status bar (bottom of the picture window), picture window. Move the mouse over the picture and show the pixel values in the status bar / ImageJ window. | "Menus at the top, tools under them. When I move over the picture, ImageJ tells me the position and the brightness of each point." |
 | 3 | 0:40 | **Image > Type > 8-bit** to turn it grey. Then **Analyze > Histogram** (shortcut Ctrl+H). | "A picture is a grid of numbers. 8-bit means each point is a brightness from 0 (black) to 255 (white). The histogram shows how many points have each brightness." |
-| 4 | 0:30 | Open `noisy.png`. **Process > Filters > Gaussian Blur...**, tick **Preview**, move the Sigma slider (try 2). Click OK. Then **Edit > Undo** to show we can go back. | "A blur smooths out the grain. The bigger the number, the smoother the picture. Undo brings the original back." |
-| 5 | 0:30 | Open `edges.png`. **Process > Find Edges**. | "This shows where brightness changes fast. Those are the outlines of things." |
+| 4 | 0:30 | Open `noisy.gif`. **Process > Filters > Gaussian Blur...**, tick **Preview**, move the Sigma slider (try 2). Click OK. Then **Edit > Undo** to show we can go back. | "A blur smooths out the grain. The bigger the number, the smoother the picture. Undo brings the original back." |
+| 5 | 0:30 | Open `edges.gif`. **Process > Find Edges**. | "This shows where brightness changes fast. Those are the outlines of things." |
 | 6 | 0:40 | Open `blobs.gif`. **Image > Adjust > Threshold...** (shortcut Ctrl+Shift+T, confirmed `[T]` in ij.jar). Move the slider until only the shapes are red. Click **Apply**. | "Thresholding picks which points count as 'object' and which count as 'background'. The picture turns black and white." |
 | 7 | 0:50 | **Analyze > Analyze Particles...**, tick **Display results** and **Summarize**, click OK. Read out the count from the Results window. | "Now ImageJ counts the shapes and measures the size of each one. This is what scientists use ImageJ for." |
-| 8 | 0:50 | Open a fresh copy of `blobs.gif` (or `noisy.png`). **Plugins > Macros > Record...** Run **Gaussian Blur** (sigma 2), then **Find Edges**. In the Recorder window click **Create**. Open another picture and run the macro from the editor with **Macros > Run Macro**. | "A macro is a recording of steps. I do the work once, and ImageJ repeats it on any other picture. That is how you process hundreds of pictures without clicking each time." |
+| 8 | 0:50 | Open a fresh copy of `blobs.gif` (or `noisy.gif`). **Plugins > Macros > Record...** Run **Gaussian Blur** (sigma 2), then **Find Edges**. In the Recorder window click **Create**. Open another picture and run the macro from the editor with **Macros > Run Macro**. | "A macro is a recording of steps. I do the work once, and ImageJ repeats it on any other picture. That is how you process hundreds of pictures without clicking each time." |
 
 Total: 0:20 + 0:40 + 0:40 + 0:30 + 0:30 + 0:40 + 0:50 + 0:50 = **5:00**.
 
