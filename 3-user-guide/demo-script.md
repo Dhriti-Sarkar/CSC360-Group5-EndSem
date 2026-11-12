@@ -46,7 +46,7 @@ Step 8 is the most likely to go wrong, so it has a fallback: if recording fails,
 
 - A step fails: say "let me skip ahead", go to the next step. Each step works on its own picture, so skipping does not break later steps.
 - ImageJ crashes or freezes: restart it, then continue from step 4 with the pictures already in `samples/`.
-- Nothing works: switch to Heer's backup video (`presentation/`) and talk over it.
+- Nothing works: switch to the step-by-step screenshots in the slides and talk over them.
 - Threshold slider gives a messy result: click **Auto** in the Threshold window, then **Apply**.
 
 ## Who does what (to agree in Stage 3)
@@ -63,5 +63,4 @@ Step 8 is the most likely to go wrong, so it has a fallback: if recording fails,
 - [ ] Run every step in real ImageJ on the demo laptop and time it with a stopwatch.
 - [ ] Fix every **CHECK** item (shortcuts and menu names can differ by version).
 - [ ] Record `demo-macro.ijm` and save it in `3-user-guide/samples/`.
-- [ ] Send the final numbered steps to Heer so the backup video follows the same order.
 - [ ] Add a screenshot of each step for Jiya's slides.
