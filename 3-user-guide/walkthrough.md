@@ -19,8 +19,6 @@ Menu names were checked against `ij.jar` 1.54. Shortcuts: on a Mac, use Cmd inst
 
 To get the noisy picture: open Leaf, then **Process > Noise > Add Noise**.
 
-> Screenshot: `img/00-open-samples.png` (the **File > Open Samples** menu)
-
 ## 1. Open a picture
 
 **File > Open...** (Ctrl+O) or **File > Open Samples > Clown**.
@@ -108,7 +106,7 @@ TODO: save the macro as `macros/blur-edges.ijm` once recorded.
 
 ## Screenshot checklist
 
-- [ ] 00, 01
+- [ ] 01
 - [ ] 03a, 03b
 - [ ] 04a, 04b
 - [ ] 05a, 05b
