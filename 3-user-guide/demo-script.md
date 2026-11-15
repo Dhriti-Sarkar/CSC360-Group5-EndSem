@@ -1,8 +1,8 @@
-# ImageJ Live Demo Script (DRAFT)
+# ImageJ Live Demo Script
 
-Owner: Dhriti (M3). Length: 5:00. Status: **menu names checked against ij.jar 1.54p; not yet timed in real ImageJ**.
+Owner: Dhriti (M3). Length: 5:00. The demo is **fully live**: there is no recorded video, so the fallbacks below are what we rely on if something breaks.
 
-Menu paths and shortcuts below come from general ImageJ knowledge. Before freezing this script, run it once on the demo laptop and fix anything that differs (marked **CHECK**).
+Status: menu names and the Threshold shortcut are checked against `ij.jar` 1.54. **Not yet timed in real ImageJ.** Before the final rehearsal, run it once on the demo laptop and fix anything that differs.
 
 ## Before the demo starts (not part of the 5 minutes)
 
@@ -46,7 +46,8 @@ Step 8 is the most likely to go wrong, so it has a fallback: if recording fails,
 
 - A step fails: say "let me skip ahead", go to the next step. Each step works on its own picture, so skipping does not break later steps.
 - ImageJ crashes or freezes: restart it, then continue from step 4 with the pictures already in `samples/`.
-- Nothing works: switch to the step-by-step screenshots in the slides and talk over them.
+- Nothing works: there is no video to play. Switch to the step-by-step screenshots in the slides (one per step, from the checklist below) and talk over them, then take questions.
+- Keep the one-page cheat sheet (`cheat-sheet.md`) open on a second screen or printed, so you can read out menu paths if the screen freezes.
 - Threshold slider gives a messy result: click **Auto** in the Threshold window, then **Apply**.
 
 ## Who does what (to agree in Stage 3)
@@ -61,6 +62,8 @@ Step 8 is the most likely to go wrong, so it has a fallback: if recording fails,
 
 - [ ] Choose and download the four sample pictures.
 - [ ] Run every step in real ImageJ on the demo laptop and time it with a stopwatch.
-- [ ] Fix every **CHECK** item (shortcuts and menu names can differ by version).
+- [ ] Confirm the shortcuts Ctrl+O, Ctrl+H and Ctrl+Z in real ImageJ (the others are checked against `ij.jar`).
+- [ ] Heer runs the whole script once on WSL and reports any step that breaks.
 - [ ] Record `demo-macro.ijm` and save it in `3-user-guide/samples/`.
-- [ ] Add a screenshot of each step for Jiya's slides.
+- [ ] Add a screenshot of each step for Jiya's slides. These are our only fallback now that there is no video, so all 8 steps need one.
+- [ ] Rehearse the full 5:00 once as a group with the speaker split above.
