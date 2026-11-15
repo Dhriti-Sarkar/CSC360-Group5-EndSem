@@ -1,6 +1,6 @@
 # ImageJ cheat sheet
 
-One page for the audience. Menu paths match our live demo (`demo-script.md`) and were checked against ImageJ 1.54 (`ij.jar`). On a Mac, use Cmd instead of Ctrl.
+One page for the audience. Menu names were checked against ImageJ 1.54 (`ij.jar`). On a Mac, use Cmd instead of Ctrl.
 
 ## The window
 
@@ -28,7 +28,7 @@ One page for the audience. Menu paths match our live demo (`demo-script.md`) and
 
 ## Macro in one line
 
-Record once, replay on any picture. Our demo macro does a blur then edges:
+Record once, replay on any picture. Example macro that does a blur then edges:
 
 ```
 run("Gaussian Blur...", "sigma=2");
