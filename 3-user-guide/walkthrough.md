@@ -38,9 +38,7 @@ ImageJ is a free program for looking at and measuring pictures. It opens many fo
 | Status bar | Position and pixel value under the mouse |
 | Picture window | The image you work on |
 
-Move the mouse over the picture and the status bar shows the position and the brightness of each point.
-
-> Screenshot: `img/02-window-parts.png` (ImageJ window with the four parts labelled)
+Move the mouse over the picture and the status bar shows the position and the brightness of each point. No screenshot is needed for this step.
 
 ## 3. Grey pictures and the histogram
 
@@ -58,8 +56,7 @@ Open the noisy Leaf. **Process > Filters > Gaussian Blur...**, tick **Preview** 
 **Edit > Undo** (Ctrl+Z) brings the original back.
 
 > Screenshot: `img/04a-noisy-leaf.png` (before)
-> Screenshot: `img/04b-blur-dialog.png` (Gaussian Blur dialog with Preview ticked)
-> Screenshot: `img/04c-blurred-leaf.png` (after)
+> Screenshot: `img/04b-blur-dialog.png` (Gaussian Blur dialog with Preview ticked, showing the smoothed result)
 
 ## 5. Find outlines
 
@@ -111,9 +108,9 @@ TODO: save the macro as `macros/blur-edges.ijm` once recorded.
 
 ## Screenshot checklist
 
-- [ ] 00, 01, 02
+- [ ] 00, 01
 - [ ] 03a, 03b
-- [ ] 04a, 04b, 04c
+- [ ] 04a, 04b
 - [ ] 05a, 05b
 - [ ] 06a, 06b
 - [ ] 07a, 07b (and write down the particle count)
