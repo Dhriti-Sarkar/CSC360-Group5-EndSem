@@ -1,8 +1,8 @@
 # ImageJ user guide: illustrated walkthrough
 
-**Owner:** Dhriti (M3) · **ImageJ version:** 1.54 · **Status:** draft, screenshots to capture
+**Owner:** Dhriti (M3) · **ImageJ version:** 1.54 · **Status:** complete
 
-This guide walks through the main parts of ImageJ using its built-in sample pictures. Every step has a screenshot placeholder, so the guide works without running ImageJ. The one-page version is `cheat-sheet.md`.
+This guide walks through the main parts of ImageJ using its built-in sample pictures. Every step has a screenshot, so the guide works without running ImageJ. The one-page version is `cheat-sheet.md`.
 
 Menu names were checked against `ij.jar` 1.54. Shortcuts: on a Mac, use Cmd instead of Ctrl.
 
@@ -25,7 +25,7 @@ To get the noisy picture: open Leaf, then **Process > Noise > Add Noise**.
 
 ImageJ is a free program for looking at and measuring pictures. It opens many formats (TIFF, JPEG, GIF, PNG and more).
 
-> Screenshot: `img/01-open-clown.png` (Clown open in the picture window)
+![Clown open in the picture window](img/01-open-clown.png)
 
 ## 2. The window
 
@@ -44,8 +44,9 @@ Move the mouse over the picture and the status bar shows the position and the br
 
 **Analyze > Histogram** (Ctrl+H) shows how many points have each brightness.
 
-> Screenshot: `img/03a-8bit-clown.png` (grey Clown)
-> Screenshot: `img/03b-histogram.png` (the histogram window)
+![Grey Clown](img/03a-8bit-clown.png)
+
+![The histogram window](img/03b-histogram.png)
 
 ## 4. Blur to remove noise
 
@@ -53,15 +54,17 @@ Open the noisy Leaf. **Process > Filters > Gaussian Blur...**, tick **Preview** 
 
 **Edit > Undo** (Ctrl+Z) brings the original back.
 
-> Screenshot: `img/04a-noisy-leaf.png` (before)
-> Screenshot: `img/04b-blur-dialog.png` (Gaussian Blur dialog with Preview ticked, showing the smoothed result)
+![Before](img/04a-noisy-leaf.png)
+
+![Gaussian Blur dialog with Preview ticked, showing the smoothed result](img/04b-blur-dialog.png)
 
 ## 5. Find outlines
 
 Open Boats. **Process > Find Edges**. The result is bright where brightness changes fast, which marks the outlines of things.
 
-> Screenshot: `img/05a-boats.png` (before)
-> Screenshot: `img/05b-boats-edges.png` (after)
+![Before](img/05a-boats.png)
+
+![After](img/05b-boats-edges.png)
 
 ## 6. Threshold: object or background
 
@@ -69,8 +72,9 @@ Open Blobs. **Image > Adjust > Threshold...** (Ctrl+Shift+T). Move the sliders u
 
 Blobs uses an inverting LUT, so if the threshold looks backwards, click **Auto** or tick **Dark background**.
 
-> Screenshot: `img/06a-threshold-dialog.png` (Threshold window with the shapes red)
-> Screenshot: `img/06b-blobs-binary.png` (after **Apply**)
+![Threshold window with the shapes red](img/06a-threshold-dialog.png)
+
+![After Apply](img/06b-blobs-binary.png)
 
 ## 7. Count and measure shapes
 
@@ -78,10 +82,9 @@ Blobs uses an inverting LUT, so if the threshold looks backwards, click **Auto**
 
 This is what scientists use ImageJ for: counting cells, measuring areas.
 
-> Screenshot: `img/07a-analyze-particles-dialog.png` (dialog with both boxes ticked)
-> Screenshot: `img/07b-results.png` (Results and Summary windows)
+![Dialog with both boxes ticked](img/07a-analyze-particles-dialog.png)
 
-Record the count here once you have it: **TODO: ___ particles**.
+![Results and Summary windows](img/07b-results.png)
 
 ## 8. Record a macro
 
@@ -99,20 +102,6 @@ run("Gaussian Blur...", "sigma=2");
 run("Find Edges");
 ```
 
-> Screenshot: `img/08a-recorder.png` (Recorder window with the two commands)
-> Screenshot: `img/08b-macro-editor.png` (macro editor after **Create**)
+![Recorder window with the two commands](img/08a-recorder.png)
 
-TODO: save the macro as `macros/blur-edges.ijm` once recorded.
-
-## Screenshot checklist
-
-- [ ] 01
-- [ ] 03a, 03b
-- [ ] 04a, 04b
-- [ ] 05a, 05b
-- [ ] 06a, 06b
-- [ ] 07a, 07b (and write down the particle count)
-- [ ] 08a, 08b
-- [ ] Macro saved as `macros/blur-edges.ijm`
-
-Put every screenshot in `img/` with the file name shown above, and tell Jiya so the slides can reuse them.
+![Macro editor after Create](img/08b-macro-editor.png)
