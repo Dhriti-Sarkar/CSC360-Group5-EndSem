@@ -120,4 +120,6 @@ Confirm the Java in use: **Help > About ImageJ** shows the Java version. It shou
 | `README.md` | This guide |
 | `check-java.ps1` | Prints Java, `javac`, `JAVA_HOME` and PATH status for self-diagnosis |
 | `run-imagej.bat` | Launcher for the `ij.jar` setup, with 2 GB memory |
+| `slides.md` | Slide content and speaker notes for the deck |
+| `viva-prep.md` | Questions we expect in the viva, with answers |
 | `img/` | Numbered screenshots |
