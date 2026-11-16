@@ -1,6 +1,6 @@
 # Installing ImageJ on Windows with a Modern JDK
 
-**Owner:** Member 1 · **Machine:** Windows 10/11 · **Tested on:** a clean Windows user account
+**Owner:** Jiya · **Machine:** Windows 10/11 · **Tested on:** a clean Windows user account
 
 This guide takes you from nothing to a running ImageJ, using a modern OpenJDK (21 LTS or 25) instead of the old Java bundled with the Windows download.
 
@@ -22,7 +22,7 @@ java -version
 
 ## Step 2: Install a JDK
 
-1. Download **Eclipse Temurin 21 (LTS)** from https://adoptium.net (choose Windows, x64, `.msi`). Temurin 25 also works; we standardise on whichever the group agreed in the PLAN.
+1. Download **Eclipse Temurin 21 (LTS)** from https://adoptium.net (choose Windows, x64, `.msi`). Temurin 25 also works; either is fine for our plugins.
 2. Run the `.msi`. On the **Custom Setup** screen, set these features to "Will be installed on local hard drive":
    - **Set JAVA_HOME variable**
    - **Add to PATH**
@@ -71,7 +71,7 @@ For the recommended option:
 1. Create a folder, e.g. `C:\ImageJ\`.
 2. Download `ij.jar` into that folder.
 3. Create a `plugins\` subfolder inside it (ImageJ loads plugins from here).
-4. Copy `Group5_Plugins.jar` (from Member 4) into `plugins\`.
+4. Build `Group5_Plugins.jar` by following `4-plugins/README.md` (needs bash: Git Bash or WSL), then copy `out/plugins/Group5_Plugins.jar` into `plugins\`.
 5. Copy `run-imagej.bat` from this folder into `C:\ImageJ\` as well.
 
 ## Step 6: First launch

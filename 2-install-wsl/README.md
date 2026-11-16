@@ -174,6 +174,8 @@ For better file performance, working inside the Ubuntu filesystem is recommended
 | Java not found | Install openjdk-21-jdk |
 | ImageJ JAR not found | Verify the path to ij.jar |
 | Headless output missing | Check macro path and Java output for errors |
+| `unzip` or `wget` not found | Run `sudo apt install -y unzip wget` |
+| Download of `ij154.zip` fails | Check your internet connection, then retry. The URL (`wsr.imagej.net/distros/cross-platform/ij154.zip`) was checked and works. Otherwise download `ij.jar` from https://imagej.net/ij/download.html and place it in `~/imagej/ImageJ/` |
 | Slow file access | Work inside ~/ rather than /mnt/c |
 
 ## 10. Project Files

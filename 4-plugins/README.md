@@ -1,6 +1,6 @@
 # 4-plugins: ImageJ plugins (Group 5)
 
-Plugin source project. Plain `javac`, no Maven/Gradle. Owner: Member 4 (Aangi).
+Plugin source project. Plain `javac`, no Maven/Gradle. Owner: Aangi.
 
 ## Build
 
