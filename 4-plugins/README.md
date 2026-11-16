@@ -12,7 +12,7 @@ cd 4-plugins
 ```
 
 Output jar: `out/plugins/Group5_Plugins.jar`.
-Tested with: OpenJDK 25 / ImageJ 1.54p (confirm same versions as the install guides).
+Tested with: OpenJDK 21 and 25 / ImageJ 1.54p.
 Windows: `build.sh` needs bash. Use Git Bash or WSL. Build it there, then copy the jar into ImageJ's `plugins/` folder.
 
 ## Plugin status
@@ -25,6 +25,15 @@ Windows: `build.sh` needs bash. Use Git Bash or WSL. Build it there, then copy t
 | Image_Info | Plugins > Group5 > Image Info (PlugIn demo) | PlugIn | any | any | n/a | n/a | working |
 
 
+
+Screenshots (in `img/`):
+
+![Group5 menu](img/00-group5-menu.png)
+![Invert before](img/01-invert-before.png) ![Invert after](img/02-invert-after.png)
+![Grayscale before](img/03-grayscale-before.png) ![Grayscale after](img/04-grayscale-after.png)
+![Blur before](img/05-blur-before.png) ![Blur after](img/06-blur-after.png)
+![Blur vs built-in Mean: difference is black](img/07-blur-difference.png)
+![JAR Demo menu](img/08-jar-demo-menu.png)
 
 ## PlugIn vs PlugInFilter
 
