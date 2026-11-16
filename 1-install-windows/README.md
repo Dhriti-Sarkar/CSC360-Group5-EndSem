@@ -29,8 +29,7 @@ java -version
    - (Optional) **Associate .jar files with Java**
 3. Finish the installer.
 
-> Screenshot: `img/02-temurin-custom-setup.png`
-
+> 
 ## Step 3: Verify the install
 
 Close every terminal window and open a **new** PowerShell window (environment variables only load in new windows). Run:
