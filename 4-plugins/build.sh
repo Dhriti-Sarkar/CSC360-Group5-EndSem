@@ -18,7 +18,12 @@ case "${1:-build}" in
     ;;
   run)
     "$0" build
-    java -cp "$JAR:out/classes" ij.ImageJ
+    # ImageJ only reads plugins.config from jars in a plugins/ folder under its
+    # working directory, not from the classpath. Run from a scratch folder that has one.
+    rm -rf out/ij && mkdir -p out/ij/plugins
+    cp out/plugins/Group5_Plugins.jar out/ij/plugins/
+    cd out/ij
+    java -cp "../../$JAR" ij.ImageJ
     ;;
   *) echo "usage: $0 [fetch|build|run]" >&2; exit 2 ;;
 esac

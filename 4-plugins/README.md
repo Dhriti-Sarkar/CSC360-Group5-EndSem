@@ -8,7 +8,7 @@ Plugin source project. Plain `javac`, no Maven/Gradle. Owner: Aangi.
 cd 4-plugins
 ./build.sh fetch   # downloads ij.jar (v1.54p) to lib/ (git-ignored)
 ./build.sh         # compiles src/ -> out/ and builds out/plugins/Group5_Plugins.jar
-./build.sh run     # launches ImageJ with the plugins available
+./build.sh run     # launches ImageJ with Group5_Plugins.jar loaded from out/ij/plugins/
 ```
 
 Output jar: `out/plugins/Group5_Plugins.jar`.
