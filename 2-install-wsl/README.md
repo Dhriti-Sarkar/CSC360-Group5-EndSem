@@ -103,24 +103,26 @@ java -jar ~/imagej/ImageJ/ij.jar
 
 WSLg allows Linux graphical applications to appear as normal windows on Windows.
 
+
 ## 7. Run ImageJ in Batch Mode
 
-ImageJ supports automated image processing through macros.
+ImageJ supports automated image processing through macros using its `-batch` option.
 
 The supplied macro:
 
-`headless-demo.ijm`
+`batch-demo.ijm`
 
 performs these operations:
 
 1. Creates a 256 x 256 8-bit ramp image.
 2. Applies Gaussian Blur with sigma 4.
-3. Saves the processed image as result.png.
+3. Creates the output directory if it does not exist.
+4. Saves the processed image as `result.png`.
 
 Run:
 
 ```bash
-./run-headless.sh
+./run-batch.sh
 ```
 
 The generated image is saved at:
@@ -137,9 +139,7 @@ file ~/imagej/output/result.png
 
 Expected output: a 256 x 256, 8-bit grayscale PNG image.
 
-Note: The tested batch command uses ImageJ's -batch option.
-Strict Java headless mode using
--Djava.awt.headless=true was not verified successfully.
+**Note:** The tested command uses ImageJ's `-batch` option. This demonstrates ImageJ batch processing; strict Java headless mode using `-Djava.awt.headless=true` has not been verified.
 
 ## 8. Windows and Linux File Access
 
@@ -173,18 +173,24 @@ For better file performance, working inside the Ubuntu filesystem is recommended
 | GUI does not open | Run wsl --update and wsl --shutdown |
 | Java not found | Install openjdk-21-jdk |
 | ImageJ JAR not found | Verify the path to ij.jar |
-| Headless output missing | Check macro path and Java output for errors |
+| Batch output missing | Check the macro path, output directory, and Java output for errors |
+| `unzip` or `wget` not found | Run `sudo apt update && sudo apt install -y unzip wget` |
+| ImageJ ZIP download fails | Check internet connectivity and retry the download URL; use `curl -L` as an alternative to `wget` |
 | Slow file access | Work inside ~/ rather than /mnt/c |
+| `unzip` or `wget` not found | Run `sudo apt update && sudo apt install -y unzip wget` |
+| ImageJ ZIP download fails | Check internet connectivity and retry the download URL; use `curl -L` as an alternative to `wget` |
 
 ## 10. Project Files
+
 
 | File | Purpose |
 |---|---|
 | setup-imagej-wsl.sh | Installs Java and downloads ImageJ |
-| run-gui.sh | Launches ImageJ GUI |
-| headless-demo.ijm | Image processing macro |
-| run-headless.sh | Executes the macro in batch mode |
-| img/ | Installation screenshots |
+| run-gui.sh | Launches the ImageJ GUI |
+| batch-demo.ijm | Image processing macro |
+| run-batch.sh | Executes the macro in ImageJ batch mode |
+| img/ | Installation and demonstration screenshots |
+
 
 ## 11. Conclusion
 

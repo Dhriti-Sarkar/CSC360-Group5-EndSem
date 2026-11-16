@@ -9,7 +9,7 @@
 - No dual-boot or separate Linux installation required.
 - WSLg allows Linux graphical applications to open as Windows windows.
 
-**Suggested visual:** `img/01-wsl-version.png`
+**Suggested visual:** `img/02-wsl-version.png`
 
 **Speaker notes:**
 
@@ -60,13 +60,17 @@ cd ~/imagej
 java -jar ~/imagej/ImageJ/ij.jar
 ```
 
-**Suggested visual:** `img/04-imagej-installation.png` and `img/05-imagej-gui.png`
+**Suggested visuals:**
+- `img/02-wsl-version.png` — WSL2 verification (Ubuntu, VERSION 2).
+- `img/03-imagej-gui.png` — ImageJ running through WSLg, without terminal overlap.
+- `img/01-batch-result.png` — Actual blurred ramp output opened in ImageJ.
 
 **Speaker notes:**
 
 "Once Java was installed, we downloaded the ImageJ distribution and extracted it inside our Ubuntu environment. ImageJ's main application is stored in a JAR file called ij.jar. We launched it using Java, and WSLg allowed the graphical interface to appear directly on our Windows desktop."
 
 ---
+
 
 ## Slide 4: Running ImageJ in Batch Mode
 
@@ -82,19 +86,24 @@ java -jar ~/imagej/ImageJ/ij.jar
 ```javascript
 newImage("Test Image", "8-bit ramp", 256, 256, 1);
 run("Gaussian Blur...", "sigma=4");
-saveAs("PNG", "/home/heer_patel/imagej/output/result.png");
-print("Headless processing completed successfully!");
+
+home = getDirectory("home");
+outputDir = home + "imagej/output/";
+File.makeDirectory(outputDir);
+
+saveAs("PNG", outputDir + "result.png");
+print("Batch processing completed successfully!");
 ```
 
 **Execution command:**
 
 ```bash
-java -jar ~/imagej/ImageJ/ij.jar -batch /path/to/headless-demo.ijm
+java -jar "$IJ_JAR" -batch "$SCRIPT_DIR/batch-demo.ijm"
 ```
 
 **Output:** `result.png` (256 × 256 pixels, 8-bit grayscale).
 
-**Suggested visual:** `img/06-headless-output.png`
+**Suggested visual:** `img/06-batch-output.png`
 
 **Speaker notes:**
 

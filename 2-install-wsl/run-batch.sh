@@ -19,7 +19,7 @@ if [ ! -f "$IJ_JAR" ]; then
 fi
 
 # Run ImageJ macro in batch mode
-java -jar "$IJ_JAR" -batch "$SCRIPT_DIR/headless-demo.ijm"
+java -jar "$IJ_JAR" -batch "$SCRIPT_DIR/batch-demo.ijm"
 
-echo "Headless batch processing finished."
+echo "ImageJ batch processing finished."
 echo "Check output directory: $OUTPUT_DIR"
