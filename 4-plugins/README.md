@@ -13,7 +13,7 @@ cd 4-plugins
 
 Output jar: `out/plugins/Group5_Plugins.jar`.
 Tested with: OpenJDK 25 / ImageJ 1.54p (confirm same versions as the install guides).
-Windows: `build.sh` needs bash. Use Git Bash or WSL, or just use the **prebuilt jar** (see Release / Drive link in presentation/README.md).
+Windows: `build.sh` needs bash. Use Git Bash or WSL. Build it there, then copy the jar into ImageJ's `plugins/` folder.
 
 ## Plugin status
 
