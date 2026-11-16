@@ -1,16 +1,16 @@
 # CSC360 Group 5: ImageJ End-Sem Project
 
 **Topic:** Present ImageJ capabilities: installation (modern JDK, Windows, WSL), user guide (UI), and plugins.
-The project ends in a group presentation.
+The project ends in a group presentation (slides and viva notes are kept outside this repo).
 
 ## Who does what
 
 | # | Member   | Topic | Folder | Shared task |
 |---|----------|-------|--------|-------------|
-| 1 | Jiya   | Intro + Windows & JDK install | `1-install-windows/` | Owns the slide deck (`presentation/`) |
+| 1 | Jiya   | Intro + Windows & JDK install | `1-install-windows/` | Intro and Windows install walkthrough |
 | 2 | Heer   | WSL install: WSLg, apt JDK, headless mode, troubleshooting | `2-install-wsl/` | Tests the WSL install steps |
 | 3 | Dhriti  | User guide / UI tour: menus, toolbar, filters, histogram, edges, Macro Recorder | `3-user-guide/` | One-page cheat sheet |
-| 4 | Aangi   | Plugins: installing existing ones, writing our own (Invert_Image, grayscale, 3x3 blur), PlugIn vs PlugInFilter | `4-plugins/` | Q&A prep and rehearsal |
+| 4 | Aangi   | Plugins: installing existing ones, writing our own (Invert_Image, grayscale, 3x3 blur), PlugIn vs PlugInFilter | `4-plugins/` | Rehearsal |
 
 ## Repo layout
 
@@ -19,7 +19,6 @@ The project ends in a group presentation.
 2-install-wsl/       WSL install notes, screenshots
 3-user-guide/        UI tour notes, cheat sheet
 4-plugins/           Plugin source project (see its README)
-presentation/        Slide deck
 ```
 
 ## Workflow
