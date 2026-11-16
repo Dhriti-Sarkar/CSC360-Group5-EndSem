@@ -7,10 +7,10 @@ The project ends in a group presentation (slides and viva notes are kept outside
 
 | # | Member   | Topic | Folder | Shared task |
 |---|----------|-------|--------|-------------|
-| 1 | Jiya   | Intro + Windows & JDK install | `1-install-windows/` | Intro and Windows install walkthrough |
-| 2 | Heer   | WSL install: WSLg, apt JDK, headless mode, troubleshooting | `2-install-wsl/` | Tests the WSL install steps |
+| 1 | Jiya   | Intro + Windows & JDK install | `1-install-windows/` | Intro and Windows guide |
+| 2 | Heer   | WSL install: WSLg, apt JDK, headless mode, troubleshooting | `2-install-wsl/` | Tests the plugin jar on WSL |
 | 3 | Dhriti  | User guide / UI tour: menus, toolbar, filters, histogram, edges, Macro Recorder | `3-user-guide/` | One-page cheat sheet |
-| 4 | Aangi   | Plugins: installing existing ones, writing our own (Invert_Image, grayscale, 3x3 blur), PlugIn vs PlugInFilter | `4-plugins/` | Rehearsal |
+| 4 | Aangi   | Plugins: Invert_Image, Grayscale_Convert, Blur_3x3, Image_Info; installing existing plugins; PlugIn vs PlugInFilter | `4-plugins/` | Test checklist (`TESTING.md`) |
 
 ## Repo layout
 
@@ -18,7 +18,7 @@ The project ends in a group presentation (slides and viva notes are kept outside
 1-install-windows/   Windows + JDK install notes, screenshots
 2-install-wsl/       WSL install notes, screenshots
 3-user-guide/        UI tour notes, cheat sheet
-4-plugins/           Plugin source project (see its README)
+4-plugins/           Plugin source, tests, screenshots (see its README)
 ```
 
 ## Workflow
